@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Get in touch with Aurora Hotel for questions about rooms, arrivals, amenities and more." name="description"/>
+<title>Aurora Hotel | Contact Us</title>
+<link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet"/>
+<link href="css/forms.css" rel="stylesheet"/>
+<link href="css/interactions.css" rel="stylesheet"/>
+<script defer="" src="vendor/jquery/jquery.min.js"></script>
+<script defer="" src="js/script.js"></script>
+<script defer="" src="js/account.js"></script></head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<div class="container nav-wrapper">
+<a aria-label="Aurora Hotel home" class="logo" href="index.html">Aurora Hotel</a>
+<button aria-controls="primaryNav" aria-expanded="false" class="menu-toggle" id="menuToggle" type="button">Menu</button>
+<nav aria-label="Main navigation" class="main-nav" id="primaryNav">
+<ul class="nav-list">
+<li><a class="nav-link" href="index.html">Home</a></li>
+<li><a class="nav-link" href="rooms.html">Rooms</a></li>
+<li><a class="nav-link" href="about.html">About</a></li>
+<li><a class="nav-link" href="booking.html">Booking</a></li>
+<li><a aria-current="page" class="nav-link" href="contact.html">Contact</a></li>
+<li><a class="nav-link account-link" href="login.html">Account</a></li>
+</ul>
+</nav>
+<a class="button button-small header-cta" href="booking.html">Book a room</a>
+<button aria-pressed="false" class="theme-switch" id="themeBtn" type="button">Dark mode</button>
+</div>
+</header>
+<main id="main-content">
+<section class="page-hero">
+<div class="container page-hero-inner form-page-intro">
+<p class="eyebrow">Contact Aurora Hotel</p>
+<h1>Send us a message</h1>
+<p class="lead">Have a question about your stay? Our team is here to help you feel at home.</p>
+</div>
+</section>
+<section aria-labelledby="contact-form-title" class="section">
+<div class="container booking-layout">
+<section aria-labelledby="contact-form-title" class="form-shell">
+<p class="eyebrow">We would love to hear from you</p>
+<h2 id="contact-form-title">Contact our team</h2>
+
+<form class="needs-validation" data-success-target="contactSuccess" id="contactForm" novalidate="">
+<div class="row g-3">
+<div class="col-md-6">
+<label class="form-label" for="contact-name">Name</label>
+<input autocomplete="name" class="form-control" id="contact-name" minlength="2" name="name" required="" type="text"/>
+
+
+<div class="invalid-feedback">Please enter at least 2 characters.</div>
+</div>
+<div class="col-md-6">
+<label class="form-label" for="contact-email">Email</label>
+<input autocomplete="email" class="form-control" id="contact-email" name="email" required="" type="email"/>
+
+
+<div class="invalid-feedback">Please enter a valid email address.</div>
+</div>
+<div class="col-12">
+<label class="form-label" for="contact-message">Message</label>
+<textarea class="form-control" id="contact-message" maxlength="500" minlength="10" name="message" required="" rows="6"></textarea>
+
+
+<div class="invalid-feedback">Please enter a message between 10 and 500 characters.</div>
+</div>
+</div>
+<div class="form-actions-bootstrap">
+<button class="btn btn-aurora" type="submit">Prepare message</button>
+<button class="btn btn-aurora-outline" type="reset">Reset</button>
+</div>
+<div class="alert alert-success form-success" hidden="" id="contactSuccess" role="status" tabindex="-1">Your message is ready. Open your email app to send it to reception. <a href="mailto:meizlegenda@mail.ru" id="sendEmail">Open email</a></div>
+</form>
+</section>
+<aside aria-labelledby="contact-details-title" class="booking-info">
+<p class="eyebrow">At your service</p>
+<h2 id="contact-details-title">Reach our front desk</h2>
+<div class="info-block">
+<h3>Reception</h3>
+<p>Available 24 hours a day</p>
+</div>
+<div class="info-block">
+<h3>Telephone</h3>
+<p><a href="tel:+77075862097">87075862097</a></p>
+</div>
+<div class="info-block">
+<h3>Email</h3>
+<p><a href="mailto:meizlegenda@mail.ru">meizlegenda@mail.ru</a></p>
+</div>
+<div class="info-block">
+<h3>Visit us</h3>
+<p>Kabanbay batyr, 62, Astana, Kazakhstan</p>
+</div>
+</aside>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<section aria-labelledby="footer-brand" class="footer-about">
+<h2 class="footer-logo" id="footer-brand">Aurora Hotel</h2>
+<p>Thoughtful stays, warm hospitality and modern comfort in Astana.</p>
+</section>
+<nav aria-label="Footer navigation" class="footer-nav">
+<h2 class="footer-heading">Pages</h2>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a class="account-link" href="login.html">Account</a></li>
+</ul>
+</nav>
+<section aria-labelledby="footer-contact">
+<h2 class="footer-heading" id="footer-contact">Contact</h2>
+<address>Kabanbay batyr, 62<br/>Astana, Kazakhstan<br/><a href="tel:+77075862097">87075862097</a><br/><a href="mailto:meizlegenda@mail.ru">meizlegenda@mail.ru</a></address>
+</section>
+</div>
+<div class="container footer-bottom"><p>© 2026 Aurora Hotel. All rights reserved.</p></div>
+</footer>
+<script defer="" src="js/forms.js"></script>
+</body>
+</html>

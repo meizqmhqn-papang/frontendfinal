@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Guest profile at Aurora Hotel." name="description"/>
+<title>Aurora Hotel | Guest profile</title>
+<link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet"/>
+<link href="css/forms.css" rel="stylesheet"/>
+<link href="css/interactions.css" rel="stylesheet"/>
+<script defer="" src="vendor/jquery/jquery.min.js"></script>
+<script defer="" src="js/script.js"></script>
+<script defer="" src="js/account.js"></script></head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<div class="container nav-wrapper">
+<a aria-label="Aurora Hotel home" class="logo" href="index.html">Aurora Hotel</a>
+<button aria-controls="primaryNav" aria-expanded="false" class="menu-toggle" id="menuToggle" type="button">Menu</button>
+<nav aria-label="Main navigation" class="main-nav" id="primaryNav">
+<ul class="nav-list">
+<li><a class="nav-link" href="index.html">Home</a></li>
+<li><a class="nav-link" href="rooms.html">Rooms</a></li>
+<li><a class="nav-link" href="about.html">About</a></li>
+<li><a class="nav-link" href="booking.html">Booking</a></li>
+<li><a class="nav-link" href="contact.html">Contact</a></li>
+<li><a class="nav-link account-link" href="login.html">Account</a></li>
+</ul>
+</nav>
+<a class="button button-small header-cta" href="booking.html">Book a room</a>
+<button aria-pressed="false" class="theme-switch" id="themeBtn" type="button">Dark mode</button>
+</div>
+</header>
+<main id="main-content"><section class="page-hero"><div class="container page-hero-inner"><p class="eyebrow">Your account</p><h1 id="profileGreeting">Guest profile</h1><p class="lead">Your details and stay preferences.</p></div></section><section class="section"><div class="container"><section class="form-shell account-shell" hidden="" id="profilePanel"><h2>Personal details</h2><dl class="stay-summary"><div class="stay-summary-row"><dt>Name</dt><dd id="profileName"></dd></div><div class="stay-summary-row"><dt>Email</dt><dd id="profileEmail"></dd></div><div class="stay-summary-row"><dt>Phone</dt><dd id="profilePhone"></dd></div></dl><div class="form-actions-bootstrap"><a class="btn btn-aurora" href="booking.html">Plan a stay</a><a class="btn btn-aurora-outline" href="rooms.html">View rooms</a><button class="btn btn-aurora-outline" id="logoutBtn" type="button">Log out</button></div></section></div></section></main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<section aria-labelledby="footer-brand" class="footer-about">
+<h2 class="footer-logo" id="footer-brand">Aurora Hotel</h2>
+<p>Thoughtful stays, warm hospitality and modern comfort in Astana.</p>
+</section>
+<nav aria-label="Footer navigation" class="footer-nav">
+<h2 class="footer-heading">Pages</h2>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a class="account-link" href="login.html">Account</a></li>
+</ul>
+</nav>
+<section aria-labelledby="footer-contact">
+<h2 class="footer-heading" id="footer-contact">Contact</h2>
+<address>Kabanbay batyr, 62<br/>Astana, Kazakhstan<br/><a href="tel:+77075862097">87075862097</a><br/><a href="mailto:meizlegenda@mail.ru">meizlegenda@mail.ru</a></address>
+</section>
+</div>
+<div class="container footer-bottom"><p>© 2026 Aurora Hotel. All rights reserved.</p></div>
+</footer>
+</body>
+</html>

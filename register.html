@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Prepare your guest profile and personalize your stay at Aurora Hotel." name="description"/>
+<title>Aurora Hotel | Guest Registration</title>
+<link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet"/>
+<link href="css/forms.css" rel="stylesheet"/>
+<link href="css/interactions.css" rel="stylesheet"/>
+<script defer="" src="vendor/jquery/jquery.min.js"></script>
+<script defer="" src="js/script.js"></script>
+<script defer="" src="js/account.js"></script></head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<div class="container nav-wrapper">
+<a aria-label="Aurora Hotel home" class="logo" href="index.html">Aurora Hotel</a>
+<button aria-controls="primaryNav" aria-expanded="false" class="menu-toggle" id="menuToggle" type="button">Menu</button>
+<nav aria-label="Main navigation" class="main-nav" id="primaryNav">
+<ul class="nav-list">
+<li><a class="nav-link" href="index.html">Home</a></li>
+<li><a class="nav-link" href="rooms.html">Rooms</a></li>
+<li><a class="nav-link" href="about.html">About</a></li>
+<li><a class="nav-link" href="booking.html">Booking</a></li>
+<li><a class="nav-link" href="contact.html">Contact</a></li>
+<li><a class="nav-link account-link" href="login.html">Account</a></li>
+</ul>
+</nav>
+<a class="button button-small header-cta" href="booking.html">Book a room</a>
+<button aria-pressed="false" class="theme-switch" id="themeBtn" type="button">Dark mode</button>
+</div>
+</header>
+<main id="main-content">
+<section class="page-hero">
+<div class="container page-hero-inner form-page-intro">
+<p class="eyebrow">Guest registration</p>
+<h1>Create your account</h1>
+<p class="lead">Save your guest details and manage your stay preferences.</p>
+</div>
+</section>
+<section aria-labelledby="registration-title" class="section">
+<div class="container">
+<section class="form-shell">
+<p class="eyebrow">Your information</p>
+<h2 id="registration-title">Guest details</h2>
+
+<form class="" id="registrationForm" novalidate="">
+<div class="row g-3">
+<div class="col-md-6">
+<label class="form-label" for="first-name">First Name</label>
+<input autocomplete="given-name" class="form-control" id="first-name" minlength="2" name="firstName" required="" type="text"/>
+
+<div class="invalid-feedback">Enter at least 2 characters.</div>
+</div>
+<div class="col-md-6">
+<label class="form-label" for="last-name">Last Name</label>
+<input autocomplete="family-name" class="form-control" id="last-name" minlength="2" name="lastName" required="" type="text"/>
+
+<div class="invalid-feedback">Enter at least 2 characters.</div>
+</div>
+<div class="col-12">
+<label class="form-label" for="registration-email">Email</label>
+<input autocomplete="email" class="form-control" id="registration-email" name="email" required="" type="email"/>
+
+<div class="invalid-feedback">Enter a valid email address.</div>
+</div><div class="col-12"><label class="form-label" for="registration-phone">Phone number</label><input autocomplete="tel" class="form-control" id="registration-phone" name="phone" required="" type="tel"/><div class="invalid-feedback"></div></div>
+<div class="col-md-6">
+<label class="form-label" for="password">Password</label>
+<input autocomplete="new-password" class="form-control" id="password" minlength="8" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9\s]).{8,}" required="" type="password"/>
+
+
+<div class="invalid-feedback">Use at least 8 characters with uppercase, lowercase, number and symbol.</div>
+</div>
+<div class="col-md-6">
+<label class="form-label" for="confirm-password">Confirm Password</label>
+<input autocomplete="new-password" class="form-control" id="confirm-password" minlength="8" name="confirmPassword" required="" type="password"/>
+
+<div class="invalid-feedback" id="confirm-password-feedback">Please repeat the same password.</div>
+</div>
+
+
+
+</div>
+<div class="form-actions-bootstrap">
+<button class="btn btn-aurora" type="submit">Sign up</button>
+
+</div>
+
+<p class="account-error" hidden="" id="accountError" role="alert"></p></form><p class="account-switch">Already have an account? <a href="login.html">Log in</a></p><p class="account-note">Guest accounts are stored on this device. Use a password you do not use elsewhere.</p>
+</section>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<section aria-labelledby="footer-brand" class="footer-about">
+<h2 class="footer-logo" id="footer-brand">Aurora Hotel</h2>
+<p>Thoughtful stays, warm hospitality and modern comfort in Astana.</p>
+</section>
+<nav aria-label="Footer navigation" class="footer-nav">
+<h2 class="footer-heading">Pages</h2>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a class="account-link" href="login.html">Account</a></li>
+</ul>
+</nav>
+<section aria-labelledby="footer-contact">
+<h2 class="footer-heading" id="footer-contact">Contact</h2>
+<address>Kabanbay batyr, 62<br/>Astana, Kazakhstan<br/><a href="tel:+77075862097">87075862097</a><br/><a href="mailto:meizlegenda@mail.ru">meizlegenda@mail.ru</a></address>
+</section>
+</div>
+<div class="container footer-bottom"><p>© 2026 Aurora Hotel. All rights reserved.</p></div>
+</footer>
+
+</body>
+</html>
